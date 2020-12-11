@@ -1,0 +1,98 @@
+//created on: 2020-12-11
+package sodas
+
+//list any import classes here.
+
+import javax.swing.JFrame;
+import org.kie.api.runtime.KieRuntime
+import javax.swing.JOptionPane;
+import java.util.*; 
+import sodas.GUI;
+
+//declare any global variables here
+
+global JFrame frame
+
+declare Pytanie
+	pytanie : String
+	odpowiedzi: String[]
+
+end;
+
+declare Odpowiedz
+	pytanie: String
+	odp: String
+end;
+
+declare Soda
+	name: String
+end;
+
+rule "Are you in Mexico"
+
+    when
+        //conditions
+    then
+    	
+    	Pytanie pytanie = new Pytanie();
+    	pytanie.setPytanie("Are you in Mexico?");
+    	String[] odp = {"YES" , "NO"};
+    	pytanie.setOdpowiedzi(odp);
+        Odpowiedz odpowiedz = new Odpowiedz( pytanie.getPytanie()
+        	,GUI.zapytaj(frame , pytanie.getPytanie() , pytanie.getOdpowiedzi()));
+        insert(odpowiedz);
+
+end
+
+rule "Produce Are you in Mexico"
+	 when
+        Odpowiedz(pytanie == "Are you in Mexico?" , odp == "YES")
+     then
+     	Soda sodas[] = new Soda[1];
+     	sodas[0]=new Soda("Mexican soda");
+     	String propozycje = "";
+     	for(Soda soda : sodas)
+     	{
+     		insert(soda);
+     		propozycje += soda.getName() + "\n";
+     	}
+     	GUI.zaproponuj(frame , propozycje);
+end
+
+rule "Do you PwN nOoBs"
+    
+    when
+        Odpowiedz(pytanie == "Are you in Mexico?" , odp == "NO")
+    then
+        Pytanie pytanie = new Pytanie();
+    	pytanie.setPytanie("Do you PwN nOoBs?");
+    	String[] odp = {"YES" , "NO"};
+    	pytanie.setOdpowiedzi(odp);
+        Odpowiedz odpowiedz = new Odpowiedz( pytanie.getPytanie()
+        	,GUI.zapytaj(frame , pytanie.getPytanie() , pytanie.getOdpowiedzi()));
+        insert(odpowiedz);
+
+end
+
+rule "Produce Do you PwN nOoBs"
+	 when
+        Odpowiedz(pytanie == "Do you PwN nOoBs?" , odp == "YES")
+     then
+     	Soda sodas[] = new Soda[3];
+     	sodas[0] = new Soda("Jolt Cola");
+     	sodas[1] = new Soda("Mello Yello");
+     	sodas[2] = new Soda("Mountain Dew Red");
+     	String propozycje = "";
+     	for(Soda soda : sodas)
+     	{
+     		insert(soda);
+     		propozycje += soda.getName()  + "\n";
+     	}
+     	
+     	GUI.zaproponuj(frame , propozycje); 
+end
+
+
+
+
+

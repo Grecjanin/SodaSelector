@@ -92,6 +92,70 @@ rule "Produce Do you PwN nOoBs"
      	GUI.zaproponuj(frame , propozycje); 
 end
 
+rule "Are you on diet"
+    
+    when
+        Odpowiedz(pytanie == "Do you PwN nOoBs?" , odp == "NO")
+    then
+        Pytanie pytanie = new Pytanie();
+    	pytanie.setPytanie("Are you on diet?");
+    	String[] odp = {"YES" , "NO"};
+    	pytanie.setOdpowiedzi(odp);
+        Odpowiedz odpowiedz = new Odpowiedz( pytanie.getPytanie()
+        	,GUI.zapytaj(frame , pytanie.getPytanie() , pytanie.getOdpowiedzi()));
+        insert(odpowiedz);
+
+end
+
+rule "Are you ostentatious"
+    
+    when
+        Odpowiedz(pytanie == "Are you on diet?" , odp == "YES")
+    then
+        Pytanie pytanie = new Pytanie();
+    	pytanie.setPytanie("Are you ostentatious?");
+    	String[] odp = {"YES" , "NO"};
+    	pytanie.setOdpowiedzi(odp);
+        Odpowiedz odpowiedz = new Odpowiedz( pytanie.getPytanie()
+        	,GUI.zapytaj(frame , pytanie.getPytanie() , pytanie.getOdpowiedzi()));
+        insert(odpowiedz);
+
+end
+
+rule "Produce Are you ostentatious"
+	 when
+        Odpowiedz(pytanie == "Are you ostentatious?" , odp == "YES")
+     then
+     	Soda sodas[] = new Soda[4];
+     	sodas[0] = new Soda("Diet Rite");
+     	sodas[1] = new Soda("Zevia");
+     	sodas[2] = new Soda("Diet Hansen's");
+     	sodas[3] = new Soda("Blue Sky");
+     	String propozycje = "";
+     	for(Soda soda : sodas)
+     	{
+     		insert(soda);
+     		propozycje += soda.getName()  + "\n";
+     	}
+     	
+     	GUI.zaproponuj(frame , propozycje); 
+end
+
+rule "Are you animated"
+    
+    when
+        Odpowiedz(pytanie == "Are you on diet?" , odp == "NO")
+    then
+        Pytanie pytanie = new Pytanie();
+    	pytanie.setPytanie("Are you animated?");
+    	String[] odp = {"YES" , "NO"};
+    	pytanie.setOdpowiedzi(odp);
+        Odpowiedz odpowiedz = new Odpowiedz( pytanie.getPytanie()
+        	,GUI.zapytaj(frame , pytanie.getPytanie() , pytanie.getOdpowiedzi()));
+        insert(odpowiedz);
+
+end
+
 
 
 

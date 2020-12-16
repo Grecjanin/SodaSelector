@@ -156,7 +156,477 @@ rule "Are you animated"
 
 end
 
+rule "Do you long for the simpler days"
+    
+    when
+        Odpowiedz(pytanie == "Do you want yout testebuds to sing?" , odp == "NO")
+    then
+        Pytanie pytanie = new Pytanie();
+    	pytanie.setPytanie("Do you long for the simpler days?");
+    	String[] odp = {"YES" , "NO"};
+    	pytanie.setOdpowiedzi(odp);
+        Odpowiedz odpowiedz = new Odpowiedz( pytanie.getPytanie()
+        	,GUI.zapytaj(frame , pytanie.getPytanie() , pytanie.getOdpowiedzi()));
+        insert(odpowiedz);
+
+end
+
+rule "Produce Do you long for the simpler days YES"
+	 when
+        Odpowiedz(pytanie == "Do you long for the simpler days?" , odp == "YES")
+     then
+     	Soda sodas[] = new Soda[4];
+     	sodas[0] = new Soda("CocaCola CLasssic");
+     	sodas[1] = new Soda("RC Cola");
+     	sodas[2] = new Soda("Pepsi");
+     	sodas[3] = new Soda("Nehi");
+     	String propozycje = "";
+     	for(Soda soda : sodas)
+     	{
+     		insert(soda);
+     		propozycje += soda.getName()  + "\n";
+     	}
+     	
+     	GUI.zaproponuj(frame , propozycje); 
+end
+
+rule "Produce Do you long for the simpler days NO"
+	 when
+        Odpowiedz(pytanie == "Do you long for the simpler days?" , odp == "NO")
+     then
+     	Soda sodas[] = new Soda[3];
+     	sodas[0] = new Soda("A&W");
+     	sodas[1] = new Soda("Vanilla Coke");
+     	sodas[2] = new Soda("Dr Pepper");
+     	String propozycje = "";
+     	for(Soda soda : sodas)
+     	{
+     		insert(soda);
+     		propozycje += soda.getName()  + "\n";
+     	}
+     	
+     	GUI.zaproponuj(frame , propozycje); 
+end
+
+rule "Produce Do you want yout testebuds to sing"
+	 when
+        Odpowiedz(pytanie == "Do you want yout testebuds to sing?" , odp == "YES")
+     then
+     	Soda sodas[] = new Soda[1];
+     	sodas[0] = new Soda("Tastebuds singing soda");
+     	String propozycje = "";
+     	for(Soda soda : sodas)
+     	{
+     		insert(soda);
+     		propozycje += soda.getName()  + "\n";
+     	}
+     	
+     	GUI.zaproponuj(frame , propozycje); 
+end
+
+rule "Do you want yout testebuds to sing"
+    
+    when
+        Odpowiedz(pytanie == "Do you carry a backpack?" , odp == "NO")
+    then
+        Pytanie pytanie = new Pytanie();
+    	pytanie.setPytanie("Do you want yout testebuds to sing?");
+    	String[] odp = {"YES" , "NO"};
+    	pytanie.setOdpowiedzi(odp);
+        Odpowiedz odpowiedz = new Odpowiedz( pytanie.getPytanie()
+        	,GUI.zapytaj(frame , pytanie.getPytanie() , pytanie.getOdpowiedzi()));
+        insert(odpowiedz);
+
+end
+
+rule "Produce Do you carry a backpack"
+	 when
+        Odpowiedz(pytanie == "Do you carry a backpack?" , odp == "YES")
+     then
+     	Soda sodas[] = new Soda[4];
+     	sodas[0] = new Soda("Mountain Dew");
+     	sodas[1] = new Soda("A&W float");
+     	sodas[2] = new Soda("Pibb Xtra");
+     	sodas[3] = new Soda("Pepsi Blue");
+     	String propozycje = "";
+     	for(Soda soda : sodas)
+     	{
+     		insert(soda);
+     		propozycje += soda.getName()  + "\n";
+     	}
+     	
+     	GUI.zaproponuj(frame , propozycje); 
+end
+
+rule "Do you carry a backpack"
+    
+    when
+        Odpowiedz(pytanie == "Can you tolerate caffeine?" , odp == "YES")
+    then
+        Pytanie pytanie = new Pytanie();
+    	pytanie.setPytanie("Do you carry a backpack?");
+    	String[] odp = {"YES" , "NO"};
+    	pytanie.setOdpowiedzi(odp);
+        Odpowiedz odpowiedz = new Odpowiedz( pytanie.getPytanie()
+        	,GUI.zapytaj(frame , pytanie.getPytanie() , pytanie.getOdpowiedzi()));
+        insert(odpowiedz);
+
+end
+
+rule "Produce Can you tolerate caffeine"
+	 when
+        Odpowiedz(pytanie == "Can you tolerate caffeine?" , odp == "NO")
+     then
+     	Soda sodas[] = new Soda[4];
+     	sodas[0] = new Soda("Sprite");
+     	sodas[1] = new Soda("Sierra mist");
+     	sodas[2] = new Soda("Bubble up");
+     	sodas[3] = new Soda("7up");
+     	String propozycje = "";
+     	for(Soda soda : sodas)
+     	{
+     		insert(soda);
+     		propozycje += soda.getName()  + "\n";
+     	}
+     	
+     	GUI.zaproponuj(frame , propozycje); 
+end
 
 
+rule "Can you tolerate caffeine"
+    
+    when
+        Odpowiedz(pytanie == "Do you enjoy cherry with your beverage?" , odp == "NO")
+    then
+        Pytanie pytanie = new Pytanie();
+    	pytanie.setPytanie("Can you tolerate caffeine?");
+    	String[] odp = {"YES" , "NO"};
+    	pytanie.setOdpowiedzi(odp);
+        Odpowiedz odpowiedz = new Odpowiedz( pytanie.getPytanie()
+        	,GUI.zapytaj(frame , pytanie.getPytanie() , pytanie.getOdpowiedzi()));
+        insert(odpowiedz);
 
+end
 
+rule "Produce Do you enjoy cherry with your beverage"
+	 when
+        Odpowiedz(pytanie == "Do you enjoy cherry with your beverage?" , odp == "YES")
+     then
+     	Soda sodas[] = new Soda[4];
+     	sodas[0] = new Soda("CocaCola cherry");
+     	sodas[1] = new Soda("Dr Pepper cherry");
+     	sodas[2] = new Soda("CocaCola cherry2");
+     	sodas[3] = new Soda("7up cherry");
+     	String propozycje = "";
+     	for(Soda soda : sodas)
+     	{
+     		insert(soda);
+     		propozycje += soda.getName()  + "\n";
+     	}
+     	
+     	GUI.zaproponuj(frame , propozycje); 
+end
+
+rule "Do you enjoy cherry with your beverage"
+    
+    when
+        Odpowiedz(pytanie == "Do you care about HFCSC?" , odp == "NO")
+    then
+        Pytanie pytanie = new Pytanie();
+    	pytanie.setPytanie("Do you enjoy cherry with your beverage?");
+    	String[] odp = {"YES" , "NO"};
+    	pytanie.setOdpowiedzi(odp);
+        Odpowiedz odpowiedz = new Odpowiedz( pytanie.getPytanie()
+        	,GUI.zapytaj(frame , pytanie.getPytanie() , pytanie.getOdpowiedzi()));
+        insert(odpowiedz);
+
+end
+
+rule "....and taste"
+    
+    when
+        Odpowiedz(pytanie == "Do you care about HFCSC?" , odp == "YES")
+    then
+        Pytanie pytanie = new Pytanie();
+    	pytanie.setPytanie("....and taste?");
+    	String[] odp = {"YES" , "NO"};
+    	pytanie.setOdpowiedzi(odp);
+        Odpowiedz odpowiedz = new Odpowiedz( pytanie.getPytanie()
+        	,GUI.zapytaj(frame , pytanie.getPytanie() , pytanie.getOdpowiedzi()));
+        insert(odpowiedz);
+
+end
+
+rule "Produce ....and taste YES"
+	 when
+        Odpowiedz(pytanie == "....and taste?" , odp == "YES")
+     then
+     	Soda sodas[] = new Soda[3];
+     	sodas[0] = new Soda("CocaCola in glass");
+     	sodas[1] = new Soda("Tasty soda 0");
+     	sodas[2] = new Soda("Tasty soda 1");
+     	String propozycje = "";
+     	for(Soda soda : sodas)
+     	{
+     		insert(soda);
+     		propozycje += soda.getName()  + "\n";
+     	}
+     	
+     	GUI.zaproponuj(frame , propozycje); 
+end
+
+rule "Produce ....and taste NO"
+	 when
+        Odpowiedz(pytanie == "....and taste?" , odp == "NO")
+     then
+     	Soda sodas[] = new Soda[3];
+     	sodas[0] = new Soda("PepsiCola Throwback");
+     	sodas[1] = new Soda("Mountain Dew Throwback");
+     	sodas[2] = new Soda("Hansen's");
+     	String propozycje = "";
+     	for(Soda soda : sodas)
+     	{
+     		insert(soda);
+     		propozycje += soda.getName()  + "\n";
+     	}
+     	
+     	GUI.zaproponuj(frame , propozycje); 
+end
+
+rule "Do you care about HFCSC"
+    
+    when
+        Odpowiedz(pytanie == "Do you have a tummy ache?" , odp == "NO")
+    then
+        Pytanie pytanie = new Pytanie();
+    	pytanie.setPytanie("Do you care about HFCSC?");
+    	String[] odp = {"YES" , "NO"};
+    	pytanie.setOdpowiedzi(odp);
+        Odpowiedz odpowiedz = new Odpowiedz( pytanie.getPytanie()
+        	,GUI.zapytaj(frame , pytanie.getPytanie() , pytanie.getOdpowiedzi()));
+        insert(odpowiedz);
+
+end
+
+rule "Produce Do you have a tummy ache"
+	 when
+        Odpowiedz(pytanie == "Do you have a tummy ache?" , odp == "YES")
+     then
+     	Soda sodas[] = new Soda[3];
+     	sodas[0] = new Soda("Canada Dry");
+     	sodas[1] = new Soda("Schweppes ginger ale");
+     	sodas[2] = new Soda("Seagram's ginger ale");
+     	String propozycje = "";
+     	for(Soda soda : sodas)
+     	{
+     		insert(soda);
+     		propozycje += soda.getName()  + "\n";
+     	}
+     	
+     	GUI.zaproponuj(frame , propozycje); 
+end
+
+rule "Do you have a tummy ache"
+    
+    when
+        Odpowiedz(pytanie == "Do you want root beer?" , odp == "NO")
+    then
+        Pytanie pytanie = new Pytanie();
+    	pytanie.setPytanie("Do you have a tummy ache?");
+    	String[] odp = {"YES" , "NO"};
+    	pytanie.setOdpowiedzi(odp);
+        Odpowiedz odpowiedz = new Odpowiedz( pytanie.getPytanie()
+        	,GUI.zapytaj(frame , pytanie.getPytanie() , pytanie.getOdpowiedzi()));
+        insert(odpowiedz);
+
+end
+
+rule "Do you care about quality"
+    
+    when
+        Odpowiedz(pytanie == "Do you want root beer?" , odp == "YES")
+    then
+        Pytanie pytanie = new Pytanie();
+    	pytanie.setPytanie("Do you care about quality?");
+    	String[] odp = {"YES" , "NO"};
+    	pytanie.setOdpowiedzi(odp);
+        Odpowiedz odpowiedz = new Odpowiedz( pytanie.getPytanie()
+        	,GUI.zapytaj(frame , pytanie.getPytanie() , pytanie.getOdpowiedzi()));
+        insert(odpowiedz);
+
+end
+
+rule "Produce Do you care about quality YES"
+	 when
+        Odpowiedz(pytanie == "Do you care about quality?" , odp == "YES")
+     then
+     	Soda sodas[] = new Soda[6];
+     	sodas[0] = new Soda("Dr Brown's root bear");
+     	sodas[1] = new Soda("IBC root bear");
+     	sodas[2] = new Soda("Virgn root bear");
+     	sodas[3] = new Soda("Anonymous root bear 0");
+     	sodas[4] = new Soda("Anonymous root bear 1");
+     	sodas[5] = new Soda("Anonymous root bear 2");
+     	String propozycje = "";
+     	for(Soda soda : sodas)
+     	{
+     		insert(soda);
+     		propozycje += soda.getName()  + "\n";
+     	}
+     	
+     	GUI.zaproponuj(frame , propozycje); 
+end
+
+rule "Produce Do you care about quality NO"
+	 when
+        Odpowiedz(pytanie == "Do you care about quality?" , odp == "NO")
+     then
+     	Soda sodas[] = new Soda[3];
+     	sodas[0] = new Soda("A&W root bear");
+     	sodas[1] = new Soda("Mug root bear");
+     	sodas[2] = new Soda("Bazg's");
+     	String propozycje = "";
+     	for(Soda soda : sodas)
+     	{
+     		insert(soda);
+     		propozycje += soda.getName()  + "\n";
+     	}
+     	
+     	GUI.zaproponuj(frame , propozycje); 
+end
+
+rule "Do you want root beer"
+    
+    when
+        Odpowiedz(pytanie == "Do you enjoy Tyler Perry movies?" , odp == "NO")
+    then
+        Pytanie pytanie = new Pytanie();
+    	pytanie.setPytanie("Do you want root beer?");
+    	String[] odp = {"YES" , "NO"};
+    	pytanie.setOdpowiedzi(odp);
+        Odpowiedz odpowiedz = new Odpowiedz( pytanie.getPytanie()
+        	,GUI.zapytaj(frame , pytanie.getPytanie() , pytanie.getOdpowiedzi()));
+        insert(odpowiedz);
+
+end
+
+rule "Produce Do you enjoy Tyler Perry movies"
+	 when
+        Odpowiedz(pytanie == "Do you enjoy Tyler Perry movies?" , odp == "YES")
+     then
+     	Soda sodas[] = new Soda[6];
+     	sodas[0] = new Soda("Fanta grape");
+     	sodas[1] = new Soda("Fanta orange");
+     	sodas[2] = new Soda("Crush orange");
+     	sodas[3] = new Soda("Welchs grape");
+     	sodas[4] = new Soda("Big Red");
+     	sodas[5] = new Soda("Hawaiian Punch");
+     	String propozycje = "";
+     	for(Soda soda : sodas)
+     	{
+     		insert(soda);
+     		propozycje += soda.getName()  + "\n";
+     	}
+     	
+     	GUI.zaproponuj(frame , propozycje); 
+end
+
+rule "Do you enjoy Tyler Perry movies"
+    
+    when
+        Odpowiedz(pytanie == "Can you buy any of these?" , odp == "NO")
+    then
+        Pytanie pytanie = new Pytanie();
+    	pytanie.setPytanie("Do you enjoy Tyler Perry movies?");
+    	String[] odp = {"YES" , "NO"};
+    	pytanie.setOdpowiedzi(odp);
+        Odpowiedz odpowiedz = new Odpowiedz( pytanie.getPytanie()
+        	,GUI.zapytaj(frame , pytanie.getPytanie() , pytanie.getOdpowiedzi()));
+        insert(odpowiedz);
+
+end
+
+rule "Produce Can you buy any of these"
+	 when
+        Odpowiedz(pytanie == "Can you buy any of these?" , odp == "YES")
+     then
+     	Soda sodas[] = new Soda[5];
+     	sodas[0] = new Soda("Dutch Birch Beer");
+     	sodas[1] = new Soda("Moxie");
+     	sodas[2] = new Soda("ALE8");
+     	sodas[3] = new Soda("Dr Pepper in glass");
+     	sodas[4] = new Soda("Cheerwine");
+     	String propozycje = "";
+     	for(Soda soda : sodas)
+     	{
+     		insert(soda);
+     		propozycje += soda.getName()  + "\n";
+     	}
+     	
+     	GUI.zaproponuj(frame , propozycje); 
+end
+
+rule "Can you buy any of these"
+    
+    when
+        Odpowiedz(pytanie == "Are you at a picnic?" , odp == "NO")
+    then
+        Pytanie pytanie = new Pytanie();
+    	pytanie.setPytanie("Can you buy any of these?");
+    	String[] odp = {"YES" , "NO"};
+    	pytanie.setOdpowiedzi(odp);
+        Odpowiedz odpowiedz = new Odpowiedz( pytanie.getPytanie()
+        	,GUI.zapytaj(frame , pytanie.getPytanie() , pytanie.getOdpowiedzi()));
+        insert(odpowiedz);
+
+end
+
+rule "Produce Are you at a picnic"
+	 when
+        Odpowiedz(pytanie == "Are you at a picnic?" , odp == "YES")
+     then
+     	Soda sodas[] = new Soda[4];
+     	sodas[0] = new Soda("Country Time Original Lemonade");
+     	sodas[1] = new Soda("Sqwirt");
+     	sodas[2] = new Soda("Sunkist");
+     	sodas[3] = new Soda("Dad's Root Beer");
+     	String propozycje = "";
+     	for(Soda soda : sodas)
+     	{
+     		insert(soda);
+     		propozycje += soda.getName()  + "\n";
+     	}
+     	
+     	GUI.zaproponuj(frame , propozycje); 
+end
+
+rule "Are you at a picnic"
+    
+    when
+        Odpowiedz(pytanie == "Are you shopping at Tesco?" , odp == "NO")
+    then
+        Pytanie pytanie = new Pytanie();
+    	pytanie.setPytanie("Are you at a picnic?");
+    	String[] odp = {"YES" , "NO"};
+    	pytanie.setOdpowiedzi(odp);
+        Odpowiedz odpowiedz = new Odpowiedz( pytanie.getPytanie()
+        	,GUI.zapytaj(frame , pytanie.getPytanie() , pytanie.getOdpowiedzi()));
+        insert(odpowiedz);
+
+end
+
+rule "Produce Are you shopping at Tesco"
+	 when
+        Odpowiedz(pytanie == "Are you shopping at Tesco?" , odp == "YES")
+     then
+     	Soda sodas[] = new Soda[1];
+     	sodas[0] = new Soda("Oibla Cola");
+     	String propozycje = "";
+     	for(Soda soda : sodas)
+     	{
+     		insert(soda);
+     		propozycje += soda.getName()  + "\n";
+     	}
+     	
+     	GUI.zaproponuj(frame , propozycje); 
+end

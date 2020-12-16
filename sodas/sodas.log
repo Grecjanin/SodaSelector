@@ -97,7 +97,7 @@
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>4</factId>
-      <objectToString>Odpowiedz( pytanie=Are you animated?, odp=YES )</objectToString>
+      <objectToString>Odpowiedz( pytanie=Are you animated?, odp=NO )</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
@@ -105,6 +105,307 @@
       <rule>Are you animated</rule>
       <declarations></declarations>
       <factHandleIds>3</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Are you a juggalo [4]</activationId>
+      <rule>Are you a juggalo</rule>
+      <declarations></declarations>
+      <factHandleIds>4</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>Are you a juggalo [4]</activationId>
+      <rule>Are you a juggalo</rule>
+      <declarations></declarations>
+      <factHandleIds>4</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>5</factId>
+      <objectToString>Odpowiedz( pytanie=Are you a juggalo?, odp=NO )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>Are you a juggalo [4]</activationId>
+      <rule>Are you a juggalo</rule>
+      <declarations></declarations>
+      <factHandleIds>4</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Do you like the aftertaste of dirt [5]</activationId>
+      <rule>Do you like the aftertaste of dirt</rule>
+      <declarations></declarations>
+      <factHandleIds>5</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>Do you like the aftertaste of dirt [5]</activationId>
+      <rule>Do you like the aftertaste of dirt</rule>
+      <declarations></declarations>
+      <factHandleIds>5</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>6</factId>
+      <objectToString>Odpowiedz( pytanie=Do you like the aftertaste of dirt?, odp=NO )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>Do you like the aftertaste of dirt [5]</activationId>
+      <rule>Do you like the aftertaste of dirt</rule>
+      <declarations></declarations>
+      <factHandleIds>5</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Are you Tay Zonday [6]</activationId>
+      <rule>Are you Tay Zonday</rule>
+      <declarations></declarations>
+      <factHandleIds>6</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>Are you Tay Zonday [6]</activationId>
+      <rule>Are you Tay Zonday</rule>
+      <declarations></declarations>
+      <factHandleIds>6</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>7</factId>
+      <objectToString>Odpowiedz( pytanie=Are you Tay Zonday?, odp=NO )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>Are you Tay Zonday [6]</activationId>
+      <rule>Are you Tay Zonday</rule>
+      <declarations></declarations>
+      <factHandleIds>6</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Are you in Brazil [7]</activationId>
+      <rule>Are you in Brazil</rule>
+      <declarations></declarations>
+      <factHandleIds>7</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>Are you in Brazil [7]</activationId>
+      <rule>Are you in Brazil</rule>
+      <declarations></declarations>
+      <factHandleIds>7</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>8</factId>
+      <objectToString>Odpowiedz( pytanie=Are you in Brazil?, odp=NO )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>Are you in Brazil [7]</activationId>
+      <rule>Are you in Brazil</rule>
+      <declarations></declarations>
+      <factHandleIds>7</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Are you on the dole [8]</activationId>
+      <rule>Are you on the dole</rule>
+      <declarations></declarations>
+      <factHandleIds>8</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>Are you on the dole [8]</activationId>
+      <rule>Are you on the dole</rule>
+      <declarations></declarations>
+      <factHandleIds>8</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>9</factId>
+      <objectToString>Odpowiedz( pytanie=Are you on the dole?, odp=NO )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>Are you on the dole [8]</activationId>
+      <rule>Are you on the dole</rule>
+      <declarations></declarations>
+      <factHandleIds>8</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Have you the flux capacitor [9]</activationId>
+      <rule>Have you the flux capacitor</rule>
+      <declarations></declarations>
+      <factHandleIds>9</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>Have you the flux capacitor [9]</activationId>
+      <rule>Have you the flux capacitor</rule>
+      <declarations></declarations>
+      <factHandleIds>9</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>10</factId>
+      <objectToString>Odpowiedz( pytanie=Have you the flux capacitor?, odp=NO )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>Have you the flux capacitor [9]</activationId>
+      <rule>Have you the flux capacitor</rule>
+      <declarations></declarations>
+      <factHandleIds>9</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Do you like drinking bubble gum [10]</activationId>
+      <rule>Do you like drinking bubble gum</rule>
+      <declarations></declarations>
+      <factHandleIds>10</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>Do you like drinking bubble gum [10]</activationId>
+      <rule>Do you like drinking bubble gum</rule>
+      <declarations></declarations>
+      <factHandleIds>10</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>11</factId>
+      <objectToString>Odpowiedz( pytanie=Do you like drinking bubble gum?, odp=NO )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>Do you like drinking bubble gum [10]</activationId>
+      <rule>Do you like drinking bubble gum</rule>
+      <declarations></declarations>
+      <factHandleIds>10</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Are you pulling an all-nighter [11]</activationId>
+      <rule>Are you pulling an all-nighter</rule>
+      <declarations></declarations>
+      <factHandleIds>11</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>Are you pulling an all-nighter [11]</activationId>
+      <rule>Are you pulling an all-nighter</rule>
+      <declarations></declarations>
+      <factHandleIds>11</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>12</factId>
+      <objectToString>Odpowiedz( pytanie=Are you pulling an all-nighter?, odp=NO )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>Are you pulling an all-nighter [11]</activationId>
+      <rule>Are you pulling an all-nighter</rule>
+      <declarations></declarations>
+      <factHandleIds>11</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Are you shopping at Tesco [12]</activationId>
+      <rule>Are you shopping at Tesco</rule>
+      <declarations></declarations>
+      <factHandleIds>12</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>Are you shopping at Tesco [12]</activationId>
+      <rule>Are you shopping at Tesco</rule>
+      <declarations></declarations>
+      <factHandleIds>12</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>13</factId>
+      <objectToString>Odpowiedz( pytanie=Are you shopping at Tesco?, odp=NO )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>Are you shopping at Tesco [12]</activationId>
+      <rule>Are you shopping at Tesco</rule>
+      <declarations></declarations>
+      <factHandleIds>12</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Are you at a picnic [13]</activationId>
+      <rule>Are you at a picnic</rule>
+      <declarations></declarations>
+      <factHandleIds>13</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>Are you at a picnic [13]</activationId>
+      <rule>Are you at a picnic</rule>
+      <declarations></declarations>
+      <factHandleIds>13</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>14</factId>
+      <objectToString>Odpowiedz( pytanie=Are you at a picnic?, odp=YES )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>Are you at a picnic [13]</activationId>
+      <rule>Are you at a picnic</rule>
+      <declarations></declarations>
+      <factHandleIds>13</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Produce Are you at a picnic [14]</activationId>
+      <rule>Produce Are you at a picnic</rule>
+      <declarations></declarations>
+      <factHandleIds>14</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>Produce Are you at a picnic [14]</activationId>
+      <rule>Produce Are you at a picnic</rule>
+      <declarations></declarations>
+      <factHandleIds>14</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>15</factId>
+      <objectToString>Soda( name=Country Time Original Lemonade )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>16</factId>
+      <objectToString>Soda( name=Sqwirt )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>17</factId>
+      <objectToString>Soda( name=Sunkist )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>18</factId>
+      <objectToString>Soda( name=Dad&apos;s Root Beer )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>Produce Are you at a picnic [14]</activationId>
+      <rule>Produce Are you at a picnic</rule>
+      <declarations></declarations>
+      <factHandleIds>14</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
   </events>
 </org.drools.core.audit.WorkingMemoryLog>
